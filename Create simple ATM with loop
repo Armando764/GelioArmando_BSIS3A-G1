@@ -1,4 +1,4 @@
-PobleteChoice = input("Please select (1-4): ")
+GelioChoice = input("Please select (1-4): ")
 
 if PobleteChoice == '1':
     print(f"Current Balance: ₱{PobleteBalance}")
