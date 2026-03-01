@@ -1,0 +1,31 @@
+PobleteChoice = input("Please select (1-4): ")
+
+if PobleteChoice == '1':
+    print(f"Current Balance: ₱{PobleteBalance}")
+
+elif PobleteChoice == '2':
+    PobleteDeposit = int(input("Enter amount to deposit: "))
+    if PobleteDeposit <= 0:
+        print("Error: Invalid Amount.")
+    else:
+        PobleteBalance = PobleteBalance + PobleteDeposit
+        print(f"Success! ₱{PobleteDeposit} added.")
+
+elif PobleteChoice == '3':
+    PobleteWithdraw = int(input("Enter amount to withdraw: "))
+    if PobleteWithdraw <= 0:
+        print("Error: Invalid Amount.")
+    elif PobleteWithdraw < 20:
+        print("Error: Minimum withdrawal amount is ₱20.")
+    elif PobleteWithdraw > PobleteBalance:
+        print("Error: Insufficient funds!")
+    else:
+        PobleteBalance = PobleteBalance - PobleteWithdraw
+        print(f"Success! ₱{PobleteWithdraw} withdrawn.")
+
+elif PobleteChoice == '4':
+    print("Thank you!")
+    PobleteteIsActive = False
+
+else:
+    print("Invalid choice. Please try again.")
