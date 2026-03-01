@@ -1,0 +1,10 @@
+print("------------------------------")
+print(" MULTIPLICATION CALCULATOR ")
+print("------------------------------")
+
+GelioNum1 = int(input("Enter first number: "))
+GelioNum2 = int(input("Enter second number: "))
+
+GelioeProduct = GelioNum1 * GelioNum2
+
+print(f"Answer: {GelioProduct}")
