@@ -1,31 +1,31 @@
 GelioChoice = input("Please select (1-4): ")
 
-if PobleteChoice == '1':
-    print(f"Current Balance: ₱{PobleteBalance}")
+if GelioChoice == '1':
+    print(f"Current Balance: ₱{GelioBalance}")
 
-elif PobleteChoice == '2':
-    PobleteDeposit = int(input("Enter amount to deposit: "))
-    if PobleteDeposit <= 0:
+elif GelioChoice == '2':
+  GelioDeposit = int(input("Enter amount to deposit: "))
+    if GelioDeposit <= 0:
         print("Error: Invalid Amount.")
     else:
-        PobleteBalance = PobleteBalance + PobleteDeposit
-        print(f"Success! ₱{PobleteDeposit} added.")
+       GelioBalance = GelioBalance + GelioDeposit
+        print(f"Success! ₱{GelioDeposit} added.")
 
-elif PobleteChoice == '3':
-    PobleteWithdraw = int(input("Enter amount to withdraw: "))
-    if PobleteWithdraw <= 0:
+elif GelioChoice == '3':
+    GelioWithdraw = int(input("Enter amount to withdraw: "))
+    if GelioWithdraw <= 0:
         print("Error: Invalid Amount.")
-    elif PobleteWithdraw < 20:
+    elif GelioWithdraw < 20:
         print("Error: Minimum withdrawal amount is ₱20.")
-    elif PobleteWithdraw > PobleteBalance:
+    elif GelioWithdraw > GelioBalance:
         print("Error: Insufficient funds!")
     else:
-        PobleteBalance = PobleteBalance - PobleteWithdraw
-        print(f"Success! ₱{PobleteWithdraw} withdrawn.")
+        GelioBalance = GelioBalance - GelioWithdraw
+        print(f"Success! ₱{GelioWithdraw} withdrawn.")
 
-elif PobleteChoice == '4':
+elif GelioChoice == '4':
     print("Thank you!")
-    PobleteteIsActive = False
+    GelioIsActive = False
 
 else:
     print("Invalid choice. Please try again.")
