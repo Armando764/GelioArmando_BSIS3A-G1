@@ -1,8 +1,0 @@
-print("------------------------------")
-print(" AREA OF A CIRCLE ")
-print("------------------------------")
-
-GelioRadius = int(input("Enter the radius: "))
-GelioArea = 3.14 * (GelioRadius ** 2)
-
-print(f"The approximate area is: {round(GelioArea)}")
